@@ -21,7 +21,7 @@ object Task02 : Task {
     override fun partB(): Long = parseInput()
         .flatMap { range ->
             range.filter { id ->
-                id.toString() matches """^(.+?)\1+${'$'}""".toRegex()
+                id.toString() matches """^(.+?)\1+$""".toRegex()
             }
         }.sum()
 
