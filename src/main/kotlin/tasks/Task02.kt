@@ -18,9 +18,12 @@ object Task02 : Task {
         }.sum()
 
 
-    override fun partB(): Int {
-        return 0
-    }
+    override fun partB(): Long = parseInput()
+        .flatMap { range ->
+            range.filter { id ->
+                id.toString() matches """^(.+?)\1+${'$'}""".toRegex()
+            }
+        }.sum()
 
     private fun parseInput() =
         readInput("task02.txt").split(",").map { it ->
