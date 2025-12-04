@@ -22,7 +22,6 @@ object Task01 : Task {
         parseInput().forEach { num ->
             total = total + rotate(position, position + num)
             position = (position + num) % 100
-
         }
 
         return total
