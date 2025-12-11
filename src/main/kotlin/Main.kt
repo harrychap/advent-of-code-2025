@@ -1,4 +1,4 @@
-import tasks.Task04
+import tasks.Task05
 
 fun main() {
 //    println("TASK 1")
@@ -15,9 +15,14 @@ fun main() {
 //    println(Task03.partA())
 //    println(Task03.partB())
 //    println("")
+//
+//    println("TASK 4")
+//    println(Task04.partA())
+//    println(Task04.partB())
+//    println("")
 
-    println("TASK 4")
-    println(Task04.partA())
-    println(Task04.partB())
+    println("TASK 5")
+    println(Task05.partA())
+    println(Task05.partB())
     println("")
 }
